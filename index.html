@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flying...</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head> 
+<body> 
+    <section id="game">
+    
+    <section id='sec'>
+        <canvas id="idCanvas"></canvas>
+    </section>
+    <div id="placar"> MORTES: 0</div> 
+    <div id='controls'>
+        <div class="button-move" id="button-up" key="KeyW"></div>
+        <div class="button-move" id="button-right" key="KeyD"></div>
+        <div class="button-move" id="button-down" key="KeyS"></div>
+        <div class="button-move" id="button-left" key="KeyA"></div>
+    </div>
+    
+    <div id="shot" key="Space"></div>
+    <div id="fullscreen" fs="false"">   
+            TELA CHEIA
+    </div>  
+    <div id="dicio" style="display: none">
+        <div id = 'conteiner'>
+            <h1 id="palavra" class="palavra">pontuação</h1>
+            <p id="significado-dicio" class="significado"></p>
+            <button id="continuar-jogo">CONTINUAR</button>
+        </div>
+    </div>
+</section>
+    <div id="fim-jogo" style="display: none">
+        <div id = 'fim-jogo-conteiner'>
+            <h1>FIM DE JOGO</h1>
+            <div id="pontuacao-conteiner">
+                <input type="text" name="player-name" id="player-name" placeholder="Insira seu nome">
+                <input type="text" name="ip-server" id="ip-server" placeholder="Insira o IP do Servidor">
+                <button id="enviar-pontuacao-but">ENVIAR PONTUAÇÃO</button>
+            </div>
+        </div>
+        <div id="fim-jogo-creditos" style="display: none;">         
+            Parabéns, agora aguarde o anúncio do resultado
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body> 
+</html>
