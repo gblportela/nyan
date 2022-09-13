@@ -171,7 +171,7 @@ let palavras = [
 function mostarPalavra(){
    palavraEmCena = true
    cancelAnimationFrame(animationID)
-   if(indexPalavraAtual >= 0){
+   if(indexPalavraAtual >= 1){
       document.getElementById('fim-jogo').style.display = 'flex'
       closeFullscreen()
       /*palavras.forEach(element => {
